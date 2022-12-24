@@ -17,7 +17,7 @@ Django 3.1 or higher
 Installation
 Clone the repository:
 
-git clone 
+git clone https://github.com/chintu512/Chetan-devrev-assignment.git
 Navigate to the project directory:
 
 cd movie-ticket-booking
