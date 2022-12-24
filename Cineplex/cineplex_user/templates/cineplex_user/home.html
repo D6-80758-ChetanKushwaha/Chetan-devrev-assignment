@@ -1,0 +1,37 @@
+{% extends "cineplex_user/base.html" %}
+{% block title %}
+Home
+{% endblock title %}
+{% block content %}
+
+    <!-- <h1>Movie Home</h1>
+    <br>
+    {% for m in movies %}
+        <h1>{{ m.title }}</h1>
+        <p> By {{ m.tickets }} releasing on {{ m.date}}</p>
+        <p>{{ m.descrip }}</p>
+        
+    {% endfor %} -->
+    <div class="row">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Release Date</th>
+                <th scope="col">Movie Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for m in movies%}                 
+                    <tr>
+                    <th scope="row">{{ m.id }}</th>
+                    <td>{{ m.title }}</td>
+                    <td>{{ m.date }}</td>
+                    <td>{{ m.descrip }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+          </table>
+    </div>
+{% endblock content %}
